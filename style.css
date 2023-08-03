@@ -111,3 +111,7 @@ body{
     padding: 1em 0 0.5em 0;
     font-size: 25px;
 }
+
+.swiper-slide img{
+    width: 80%;
+}
