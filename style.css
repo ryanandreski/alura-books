@@ -1,30 +1,32 @@
 :root{
-    --cor-de-fundo:#EBECEE;
-    --branco:#FFFFFF;
-    --laranja:#EB9800;
-    --azul-degrade:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --cor-de-fundo:#ccd6f1a6;
+    --branco:#ffffff;
+    --laranja: #000000;
+    --azul-degrade: linear-gradient(97.54deg, #fff7f7 35.49%, #fdfdfd 165.37%);
     ---fonte-principal:"poppins";
 }
 
 body{
     background-color: var(--cor-de-fundo);
-    font-family: var(---fonte);
+    font-family: var(---fonte-principal);
 }
-.cabeçalho_menu-hamburguer{
-    width: 24px;
-    height: 24px;
-    background-image: url(./img/menu.svg);
-    background-position: center;
+
+.cabecalho-menu-hamburguer{
+    width: 44px;
+    height: 44px;
+    background-image: url(./img/Menu.svg);
     background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
 }
 
-.cabeçalho{
-    background-color: hsla(41, 100%, 55%, 0.541);
+.cabecalho{
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin: -0.5em;
 }
 
 .container{
@@ -32,28 +34,35 @@ body{
     align-items: center;
 }
 
-.container-imagem{
-    padding: 22px;
-    margin: 8px;
+.container_imagem{
+    padding: 10px;
+    margin: 10px;
     width: 40px;
 }
 
-.container-botao:checked ~ .lista-menu{
-    display:block
+.container-botao:checked ~ .lista-menu {
+    display: block;
 }
 
 .lista-menu{
     display: inline-block;
     position: absolute;
     top: 100%;
-    width: 20vw;
+    width: 20ww;
 }
 
 .lista-menu-titulo,
-.lista-menu-item{
+.lista-menu-item {
     padding: 1em;
     background-color: var(--branco);
 }
+
+
+.lista-menu-titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
 
 .lista-menu-link{
     background: var(--azul-degrade);
@@ -62,8 +71,8 @@ body{
     background-clip: text;
     text-transform: uppercase;
 }
-
-.container-botao{
+         
+.container-botao {
     display: none;
 }
 
@@ -72,8 +81,8 @@ body{
 }
 
 .banner{
-    background-color: var(--cor-de-fundo);
-    color: rgb(0, 0, 0);
+    background-color: #370f77d0;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 30px;
 }
@@ -85,14 +94,13 @@ body{
 }
 
 .banner-texto{
-    font-weight: 500;
-    font-size: 40px;
+    font-weight: 400;
 }
 
-.banner-pesquisa{
-    background-color: rgb(255, 255, 255);
-    border: 1px solid var(white);
-    color: black;
+.pesquisa{
+    background-color: rgb(255, 81, 81);
+    border: rgb(0, 0, 0);
+    color: rgb(7, 7, 7);
     border-radius: 24px;
     padding: 1em;
     width: 100%;
@@ -102,16 +110,52 @@ body{
     font-size: 20px;
 }
 
-.carrossel-titulo{
-    color: var(--laranja);
-    background-color: var(--branco);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 1em 0 0.5em 0;
-    font-size: 25px;
+
+ .carrossel-titulo{
+color: var(--laranja);
+background-color: var(--branco);
+text-align: center;
+text-transform: uppercase;
+font-size: 18px;
+font-weight: 700;
+padding: 1em 0 0.5em 0;
+    }
+
+    .swiper-slide img{
+        width: 70%;
+        padding: 10px 60px;
+    }
+
+.card-descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0,4em;
 }
 
-.swiper-slide img{
-    width: 70%;
+.card-botoes{
+    display:flex ;
+    justify-content: space-between;
+}
+
+.botoes{ 
+    display: flex;
+
+}
+
+.card{
+    background-color: #ffffffb7;
+    border-radius: 50px;
+    display: center;
+    margin: 3em 10em;
+    align-items: center;
+    padding: 2em 5em;
+}
+
+.titulo-mais-vendidos{
+    text-align: center;
+    font-size:larger;
+}
+
+.mais-vendidos-livros{
+    height: 370px;
 }
